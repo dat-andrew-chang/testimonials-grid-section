@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  padding: 10rem;
+  background-color: #ecf2f8;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas: "one" "two" "three" "four" "five";
+}
+
+.grid .testimonial {
+  background-color: grey;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.grid .testimonial .testimonial__user {
+  display: flex;
+  align-items: center;
+}
+
+.grid .testimonial .testimonial__user .testimonial__userPic img {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.grid .testimonial .testimonial__user .testimonial__userInfo {
+  margin-left: 1rem;
+}
+
+.grid .testimonial .testimonial__user .testimonial__userInfo h2 {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.grid .testimonial .testimonial__user .testimonial__userInfo p {
+  font-size: 0.6875rem;
+  opacity: 0.5;
+}
+
+.grid .testimonial p:first-of-type {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.grid .testimonial p:last-of-type {
+  opacity: 0.7;
+}
+
+.grid .testimonial:nth-of-type(1) {
+  grid-area: one;
+  background-color: #7541c8;
+  color: white;
+  position: relative;
+}
+
+.grid .testimonial:nth-of-type(1) .quotation {
+  position: absolute;
+  right: 5rem;
+}
+
+.grid .testimonial:nth-of-type(2) {
+  grid-area: two;
+  background-color: #48556a;
+  color: white;
+}
+
+.grid .testimonial:nth-of-type(3) {
+  grid-area: three;
+  background-color: white;
+}
+
+.grid .testimonial:nth-of-type(4) {
+  grid-area: four;
+  background-color: #19212e;
+  color: white;
+}
+
+.grid .testimonial:nth-of-type(5) {
+  grid-area: five;
+  background-color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*using grid-template-area*/
+@media screen and (min-width: 800px) {
+  .grid {
+    grid-template-areas: "one one two five" "three four four five";
+  }
+}
+/*# sourceMappingURL=main.css.map */
