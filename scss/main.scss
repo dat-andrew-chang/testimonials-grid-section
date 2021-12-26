@@ -17,12 +17,8 @@ $fw-700: 600;
   font-family: $font-stack;
 }
 body {
-  padding: 10rem;
+  padding: 3rem;
   background-color: $neutral-grayish-blue;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .grid {
@@ -136,7 +132,7 @@ body {
 // }
 
 /*using grid-template-area*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .grid {
     grid-template-areas:
       "one one two five"

@@ -4,12 +4,8 @@
 }
 
 body {
-  padding: 10rem;
+  padding: 3rem;
   background-color: #ecf2f8;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .grid {
@@ -105,7 +101,7 @@ body {
 }
 
 /*using grid-template-area*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .grid {
     grid-template-areas: "one one two five" "three four four five";
   }
